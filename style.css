@@ -1,19 +1,15 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #bdbdbd;
+* { /*set preconfigs to 0*/
+    margin: 0;
+    paddin: 0;
 }
-
 .spinner{
-    height: 90px;
-    width: 90px;
-    border: 15px solid #363636;
-    border-left-color: #ff5100;
+    height: 80px;
+    width: 80px;
+    border: 15px solid #363636; /* spinner color */
+    border-left-color: #ff5100; /* spinner color */ 
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
-
-@keyframes spin{
+@keyframes spin{ /* spinner animation */
     to {transform: rotate(360deg);}
 }
